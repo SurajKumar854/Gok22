@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'maven-publish'
 }
 
 android {
@@ -33,6 +32,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+
     }
     buildFeatures {
         compose true
@@ -65,16 +65,5 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
     implementation project(":goku22")
-}
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-                groupId = 'com.github.SurajKumar854'
-                artifactId = 'goku22'
-                version = '1.0'
-            }
-        }
-    }
+
 }
