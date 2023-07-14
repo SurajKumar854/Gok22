@@ -1,9 +1,9 @@
 plugins {
     id 'com.android.library'
     id 'maven-publish'
-    id 'kotlin-android'
-}
+    id 'org.jetbrains.kotlin.android'
 
+}
 android {
     namespace 'com.example.goku22'
     compileSdk 33
