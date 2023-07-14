@@ -64,8 +64,8 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.SurajKumar854'
-                artifactId = 'goku22'
-                version = '1.3'
+                artifactId = 'Gok22'
+                version = '1.4'
             }
         }
     }
